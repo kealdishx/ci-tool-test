@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "prepare": "cd .. && husky install arya/.husky"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3"
+  }
+}

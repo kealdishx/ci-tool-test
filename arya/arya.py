@@ -4,11 +4,14 @@ import shutil
 import subprocess
 import sys
 
-
 def install_dependencies():
-    check_git()
-    check_npm()
+    check_husky_hook()
+#     check_git()
+#     check_npm()
 
+def check_husky_hook():
+    config_list = shutil.which('git config -l')
+    print(config_list)
 
 def check_git():
     git_path = shutil.which('git')
@@ -31,3 +34,5 @@ def check_npm():
             print("\033[91m安装npm失败！！！\033[0m")
             sys.exit(-1)
 
+
+install_dependencies()

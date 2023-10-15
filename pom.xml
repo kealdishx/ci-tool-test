@@ -22,15 +22,15 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <executions>
                     <execution>
-                        <id>uncompress</id>
-                        <phase>install</phase>
+                        <id>check-arya</id>
+                        <phase>validate</phase>
                         <goals>
                             <goal>exec</goal>
                         </goals>
                     </execution>
                 </executions>
                 <configuration>
-                    <executable>${basedir}/arya/arya.py</executable>
+                    <executable>${basedir}/arya/arya.sh</executable>
                 </configuration>
             </plugin>
         </plugins>

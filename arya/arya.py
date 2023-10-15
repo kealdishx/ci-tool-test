@@ -4,9 +4,6 @@ import shutil
 import subprocess
 import sys
 
-if os.path.exists("./泰国旅行材料"):
-
-
 
 def install_dependencies():
     check_git()
